@@ -1,0 +1,4 @@
+It appears that the GuardDuty service is unable to obtain information from the attacks:
+Hydra password attack process was successful
+=> Hydra attack successful HYDRA.png
+=> GuardDuty do not show logs attack GuardDuty.png

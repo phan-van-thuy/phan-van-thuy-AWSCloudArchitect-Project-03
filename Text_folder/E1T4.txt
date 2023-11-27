@@ -1,0 +1,7 @@
+Based on the architecture diagram, and the steps you have taken so far to upload data and access the application web service, identify at least 2 obvious poor practices as it relates to security.  Include justification.
+
+# Poor practice 1
+Uploading data to s3 buket is not encrypted at the beginning and end => this problem can expose data
+# Poor practice 2
+Security GroupName GroupName: WebAppSG
+is allowing access on all jobs => this will make your application more vulnerable to attacks and possible exploits of some bugs

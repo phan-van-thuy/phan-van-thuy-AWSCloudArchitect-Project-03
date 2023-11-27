@@ -1,0 +1,14 @@
+# Identify tools that will allow you to do the following:
+
+## Scan infrastructure as code templates
+- Checkov Scanning
+### Example vulnerability
+- Detect access vulnerabilities to the s3 system and instances through rules, policies, and security groups
+##Scan AMI’s or containers for OS vulnerabilities
+- ECR Scanning
+### Example vulnerability
+ECR Scanning can scan Docker images to determine whether they contain software packages with known CVEs. This is an example of a CVE vulnerability
+##Scan an AWS environment for cloud configuration vulnerabilities
+- Amazon Inspector Scanning
+### Example vulnerability
+Amazon Inspector Scanning will scan for existing vulnerabilities on the EC2 system, such as installation packages, version update vulnerabilities, port scanners.

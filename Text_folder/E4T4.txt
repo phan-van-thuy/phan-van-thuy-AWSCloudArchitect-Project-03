@@ -1,0 +1,11 @@
+
+# What additional architectural change can be made to reduce the internet facing attack surface of the web application instance.
+- Deploy EC2, VPN access policies for example, set up access through cloudfront
+# Assuming the IAM permissions for the S3 bucket are still insecure, would creating VPC private endpoints for S3 prevent the unauthorized access to the secrets bucket.
+- yes it is a good idea, creating 1 s3 endpoint in private network will solve the security problem, accesses to s3 will be private and will ensure system security
+# Will applying default encryption setting to the s3 buckets encrypt the data that already exists?
+- Default encryption for S3 bucket: Enforce default encryption settings for your S3 bucket. 
+  This ensures that all objects stored in the bucket are encrypted by default. 
+  However, applying default encryption settings will not encrypt data that already exists in the bucket, data is only encrypted after default encryption has been enabled
+# What would happen if the original cloud formation templates are applied to this environment.
+- When performing the initial deployment template on the system, security or configuration changes will disappear. To keep the configurations unchanged, we need to make changes in the template before deployment.
