@@ -3,11 +3,11 @@
 |------------|-------------------|------------------------------------------------------------------------|-----------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
 | Web Server | Hosts the frontend application	 | t3.medium	                                          | 3	                                                            |   Deployed in multiple AZs in both regions
 |------------|-------------------|------------------------------------------------------------------------|-----------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
-| Asset name | Brief description | AWS size eg. t3.micro (if applicable, not all assets will have a size) | Number of nodes/replicas or just how many of a particular asset | Identify if this asset is deployed to DR, replicated, created in multiple locations or just stored elsewhere |
+| DB Cluster	 | Holds all application data (MySQL RDS)	 | db.m5.large	                                                          | 1                                                               | Replicated with read replicas in DR |
 |------------|-------------------|------------------------------------------------------------------------|-----------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
-| Asset name | Brief description | AWS size eg. t3.micro (if applicable, not all assets will have a size) | Number of nodes/replicas or just how many of a particular asset | Identify if this asset is deployed to DR, replicated, created in multiple locations or just stored elsewhere |
+| S3 Buckets	 | Stores application files and media | 5Gi                                                                    | 1                                                               | Cross-region replication enabled |
 |------------|-------------------|------------------------------------------------------------------------|-----------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
-| Asset name | Brief description | AWS size eg. t3.micro (if applicable, not all assets will have a size) | Number of nodes/replicas or just how many of a particular asset | Identify if this asset is deployed to DR, replicated, created in multiple locations or just stored elsewhere |
+| Load Balancer | Distributes traffic across web servers | 1                                                                      | 1                                                               | Configured in both regions |
 
 
 
