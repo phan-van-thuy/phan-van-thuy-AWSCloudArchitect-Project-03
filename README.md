@@ -4,8 +4,7 @@
 | Web Server | Hosts the frontend application	 | t3.medium	                                          | 3	                                                            |   Deployed in multiple AZs in both regions
 | DB Cluster	 | Holds all application data (MySQL RDS)	 | db.m5.large	                                                          | 1                                                               | Replicated with read replicas in DR |
 | S3 Buckets	 | Stores application files and media | 5Gi                                                                    | 1                                                               | Cross-region replication enabled |
-| Load Balancer | Distributes traffic across web servers | 1                                                                      | 1                                                               | Configured in both regions |
-
+| Load Balancer | Distributes traffic across web servers | 1                                                                      | 1      
 
 
 # Cloud Security - Secure the Recipe Vault Web Application
